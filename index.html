@@ -89,19 +89,18 @@
             <center>
                 <div class="button-grup">
                     <button onclick="orderProduct('Pesan+Digital+Ocean+3+Drop')">
-                        
                         <i class="fa fa-whatsapp icon" aria-hidden="true"></i> Pesan Di WhatsApp</a>
                     </button>
-                    <button>
-                        
-                        <i class="fa fa-telegram icon" aria-hidden="true"></i> Pesan Di Telegram</a>
+
+                    <button onclick="orderProduct('Pesan+Digital+Ocean+10+Drop')">
+                        <i class="fa fa-whatsapp icon" aria-hidden="true"></i> Pesan Di WhatsApp</a>
                     </button>
                 </div><br>
             </center>
         </div>
     </body>
     <script>
-       function orderProduct(productName) {
+        function orderProduct(productName) {
             var urlll = "6283841605780?text=" + productName;
             var message = "Haii Kak Mau Order Digital Ocean 3 Drop";
             var whatsappURL = "https://wa.me/" + urlll;
