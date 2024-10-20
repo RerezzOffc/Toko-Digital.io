@@ -18,7 +18,10 @@
             background-image: url("https://pomf2.lain.la/f/w8jn00wb.jpeg");
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             text-align: flex;
+            width: 100%;
+            height: 100%;
         }
         header {
             background-color: rgba(255, 255, 255, 0.55);
@@ -84,26 +87,33 @@
                     <li>DROPLET : 3 DROP ( KOSONG )</li>
                     <li>PROMO CODE : 200$</li>
                     <li>MASA AKTIF : 60 HARI</li>
+                    <li>QUALITY : STANDAR QUALITY</li>
                 </ul>
                 <h2>(IDR) RP 140.000</h2><br><br>
             <center>
                 <div class="button-grup">
-                    <button onclick="orderProduct('Pesan+Digital+Ocean+3+Drop')">
+
+                    <button onclick="orderProductwa('Pesan+Digital+Ocean+3+Drop')">
                         <i class="fa fa-whatsapp icon" aria-hidden="true"></i> Pesan Di WhatsApp</a>
                     </button>
 
-                    <button onclick="orderProduct('Pesan+Digital+Ocean+10+Drop')">
-                        <i class="fa fa-whatsapp icon" aria-hidden="true"></i> Pesan Di WhatsApp</a>
+                    <button onclick="orderProducttg('Pesan+Digital+Ocean+3+Drop')">
+                        <i class="fa fa-telegram icon" aria-hidden="true"></i> Pesan Di Telegram</a>
                     </button>
+
                 </div><br>
             </center>
         </div>
     </body>
     <script>
-        function orderProduct(productName) {
+        function orderProductwa(productName) {
             var urlll = "6283841605780?text=" + productName;
-            var message = "Haii Kak Mau Order Digital Ocean 3 Drop";
             var whatsappURL = "https://wa.me/" + urlll;
+            window.open(whatsappURL,'_blank');
+        }
+        function orderProducttg(productName) {
+            var urll = "rerez_x_hosting?text=" + productName;
+            var whatsappURL = "https://t.me/" + urll;
             window.open(whatsappURL,'_blank');
         }
     </script>
