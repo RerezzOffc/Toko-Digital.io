@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Galery</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .gallery {
+            position: relative;
+            width: 80%;
+            max-width: 600px;
+            overflow: hidden;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .gallery img {
+            width: 100%;
+            display: none;
+        }
+        .gallery img.active {
+            display: block;
+        }
+        .next {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button {
+            border: 20px solid black;
+        }
+    </style>
+    </head>
+    <!--[ HTML CODE ]-->
+    <body>
+        <div class="gallery">
+            <img src="https://pomf2.lain.la/f/w8jn00wb.jpeg" class="active" alt="Foto 1">
+            <img src="https://pomf2.lain.la/f/g1yjdeil.jpeg" alt="Foto 2">
+            <img src="https://pomf2.lain.la/f/k8fl6xwp.jpeg" alt="Foto 3">
+            <button class="next">Next ></button>
+        </div>
+    <!--[ JAVA SCRIPT]-->
+    <script>
+        const images = document.querySelectorAll('.gallery img');
+        const nextButon = document.querySelector('.next');
+        let currentindex = 0;
+
+        nextButon.addEventListener('click', () => {
+            images[currentindex].classList.remove('active');
+            currentindex = (currentindex + 1) % images.length;
+            images[currentindex].classList.add('active');
+        });
+    </script>
+    </body>
+</html>
