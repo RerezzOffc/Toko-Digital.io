@@ -22,7 +22,7 @@
                 <a href="https://t.me/rerez_x_hosting" style="text-decoration: none;"><h2>REREZZ OFFICIAL WEBSITE</h2></a> <!--{ BUAT NAMA JUDUL DI ATAS }-->
               </div>
         </header>
-
+<hr><hr>
         <div class="search-bar">
             <input type="text" id="searchlmput" placeholder="Cari Produk..." onkeyup="searchProducs()">
         </div><br><br><hr><hr>
@@ -37,46 +37,44 @@
     <!--[ LIST PRODUK ]-->
     <center><h2 id="vps">VPS UBUNTU</h2></center>
 <div class="products">
-    <!--{ produk 1 }-->
-        <div class="product" data-title="VPS 1 GB">
-            <img src="https://pomf2.lain.la/f/qjad1hx.jpeg" alt="VPS 1 GB">
-                <h2>VPS 1GB CORE 1</h2>
+
+<!--{ PRODUK 1 MENU 1 }-->
+    <div class="product" data-title="VPS 1 GB">
+        <img src="https://pomf2.lain.la/f/qjad1hx.jpeg" alt="VPS 1 GB">
+            <h2>VPS 1GB CORE 1</h2>
                 <p>(IDR) Rp 10.000</p>
-            <button onclick="openPopup('produk1')">Buka Popup 1</button>
-        </div>
-    <!--[ POP UP PRODUK 1 ]-->
-        <div class="popup-background" id="produk1">
-            <div class="popup-content">
-                <button  class="close-popup-btn" onclick="closePopup('produk1')">
-                    <i class="fas fa-home"></i>
-                </button>
-                <center><img src="https://pomf2.lain.la/f/qjad1hx.jpeg" alt="VPS 1 GB"></center>
-                    <h2>VPS 1GB CORE 1</h2><hr>
-                    <h3>SPESIFIKASI</h3>
-                    <ul>
-                        <li>RAM : 1000 / 1GB</li>
-                        <li>CPU : 1 CORE</li>
-                    </ul>
-                    <h3>KE UNTUNGAN</h3>
-                    <ul>
-                        <li>FREE INSTALL PANEL</li>
-                        <li>FREE REQUEST DOAIN</li>
-                        <li>GARANSI 15 HARI 1X AMBIL</li>
-                    </ul>
-                    <hr>
-                    <div class="popup-footer">
-                        <button class="popup-button popup-button-left">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            Pesan Di WhatsApp
+                    <button onclick="openPopup('produk1')">Buka Popup 1</button>
+                        </div>
+                            <div class="popup-background" id="produk1">
+                                <div class="popup-content">
+                                    <button  class="close-popup-btn" onclick="closePopup('produk1')">
+                                        <i class="fas fa-home"></i>
+                                            </button>
+                                                <center><img src="https://pomf2.lain.la/f/qjad1hx.jpeg" alt="VPS 1 GB"></center>
+                                                    <h2>VPS 1GB CORE 1</h2><hr>
+                                                        <h3>SPESIFIKASI</h3>
+                                                            <ul>
+                                                                <li>RAM : 1000 / 1GB</li>
+                                                                    <li>CPU : 1 CORE</li>
+                                                                </ul>
+                                                            <h3>KE UNTUNGAN</h3>
+                                                        <ul>
+                                                    <li>FREE INSTALL PANEL</li>
+                                                <li>FREE REQUEST DOAIN</li>
+                                            <li>GARANSI 15 HARI 1X AMBIL</li>
+                                        </ul><hr>
+                                        <h3>(IDR) Rp 10.000</h3>
+                                    <div class="popup-footer">
+                                <button class="popup-button popup-button-left" onclick="orderProductwa('VPS RAM 1GB CORE 1')">
+                            <i class="fa-brands fa-whatsapp"></i>Pesan Di WhatsApp
                         </button>
-                        <button class="popup-button popup-button-right">
-                            Pesan Di Telegram
-                            <i class="far fa-paper-plane"></i>
-                        </button>
-                    </div>
-            </div>
+                    <button class="popup-button popup-button-right">Pesan Di Telegram
+                <i class="far fa-paper-plane"></i>
+            </button>
         </div>
-        
+    </div>
+</div>
+        <!--[ PRODUK 2 MENU 1 ]-->
 
 
 
@@ -217,5 +215,12 @@
     <p>&copy; TOKO DIGITAL BY REREZZ OFFICIAL</p>
 </footer>
 <script src="script.js"></script>
+<script>
+    function orderProductwa(productName) {
+        var whatsappNumber = "6283841605780?text=Halo+Min+Mau+Buy"+productName;
+        var whatsappURL = "https://wa.me/" + whatsappNumber;
+        window.open(whatsappURL,'_blank');
+    }
+</script>
     </body>
 </html>
