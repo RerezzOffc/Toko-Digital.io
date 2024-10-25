@@ -48,7 +48,7 @@ header h1 {
     padding: 20px;
     justify-content: center;
     border: 3px solid rgba(69, 45, 255, 0.767);
-    margin: 50px;
+    margin: 20px;
     border-radius: 10px;
     background-color: white;
     text-align: flex;
@@ -59,7 +59,7 @@ header h1 {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    margin: 5px 15px;
+    margin: 5px 10px;
     border: 2px solid rgba(143, 128, 255, 0.675);
 }
 .product img {
@@ -122,7 +122,7 @@ a {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 50%;
+    width: 75%;
     text-align: flex;
     position: relative;
     border: 2px solid rgba(65, 42, 236, 0.6);
@@ -132,7 +132,7 @@ a {
 }
 .close-popup-btn {
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     top: 10px;
     right: 10px;
     background: none;
